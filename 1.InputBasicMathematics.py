@@ -49,29 +49,42 @@ def bai8():
     else :print(False)
 
 # Bài 9: Nhập vào số nguyên a, kiểm tra xem a có phải là số chính phương hay không, nếu có thì in ra True, ngược lại in ra False
-def bai9(n):
-    if n < 0:
-        return False
-    sqrt = int(n ** 0.5)
-    return sqrt * sqrt == n
+    def bai9(n):
+        if n < 0:
+            return False
+        sqrt = int(n ** 0.5)
+        return sqrt * sqrt == n
 
-n = int(input("Input number:"))
-if bai9(n):
-    print("True")
-else:
-    print("False")
+    n = int(input("Input number:"))
+    if bai9(n):
+        print("True")
+    else:
+        print("False")
 
 
 # Bài 10: Nhập vào lương tháng này nhận được, ta phải đưa cho vợ 90% số tiền lương đó. Hãy in ra lương ta giữ lại
-# def bai10():
+def bai10():
+    a = int(input("Nhap Luong:"))
+    tienduavo = a-(a*90/100)
+    print("Tiền còn lại sau khi đưa vợ là:", tienduavo)
 
 # Bài 11: Nhập vào 3 số a, b, c. In ra kết quả là tổng của ba số đó
-# def bai11():
+def bai11():
+    a = int(input("Nhập a:"))
+    b = int(input("Nhập b:"))
+    c = int(input("Nhập c:"))
+    print("Tong:",a+b+c)
 
 # Bài 12: Nhập vào 3 số a, b, c. Tính và in ra d = (a + b)^c
 # Nếu d là số trong khoảng từ 100 - 200 thì in ra True, ngược lại in ra False
-# def bai12():
-
-
+def bai12():
+    a = int(input("Nhập a:"))
+    b = int(input("Nhập b:"))
+    c = int(input("Nhập c:"))
+    d = (a + b)**c
+    print("d =", d)
+    if(100 <= d <= 200):print(True)
+    else:print(False)
+    
 # Gọi hàm để thực thi
-bai9()
+bai12()

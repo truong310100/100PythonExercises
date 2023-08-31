@@ -11,3 +11,5 @@ git push -u origin main
 git remote add origin https://github.com/truong310100/100PythonExercises.git
 git branch -M main
 git push -u origin main
+
+LINK: https://hocpython.org/100baitap/
