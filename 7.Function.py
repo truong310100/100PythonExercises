@@ -7,5 +7,3 @@
 # def bai79():
 # def bai80():
 # def bai81():
-
-# bai73()

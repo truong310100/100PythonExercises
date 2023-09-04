@@ -18,5 +18,3 @@
 # def bai70():
 # def bai71():
 # def bai72():
-
-# bai53()
