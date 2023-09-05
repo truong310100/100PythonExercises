@@ -1,6 +1,13 @@
 # Bài 53: Nhập vào một list số nguyên L, tìm và in ra giá trị lớn nhất trong L
-# def bai53():
-# bai53()
+def bai53():
+    L = [int(x) for x in input("Nhập danh sách (cách nhau dấu phẩy): ").split(",")]
+    if not L: print("Danh sách rỗng")
+    else:
+        max_number = [0]
+        for num in L:
+            if num > max_number:max_number=num
+            print("Giá trị lớn nhất trong danh sách là:",max_number)
+bai53()
 
 # Bài 54:Nhập vào một list số nguyên L, nhập vào 2 số nguyên dương a và b (a < b < len(L))
 # Tìm và in ra số nhỏ nhất trong list từ vị trí a đến vị trí b
