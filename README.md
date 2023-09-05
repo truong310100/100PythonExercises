@@ -15,6 +15,7 @@ git push -u origin main
 git add .
 git commit -m "update"
 git push -u origin main
+start https://github.com/truong310100/100PythonExercises.git
 
 LINK: https://hocpython.org/100baitap/
 
