@@ -3,32 +3,77 @@ def bai53():
     L = [int(x) for x in input("Nhập danh sách (cách nhau dấu phẩy): ").split(",")]
     if not L: print("Danh sách rỗng")
     else:
-        max_number = [0]
-        for num in L:
-            if num > max_number:max_number=num
-            print("Giá trị lớn nhất trong danh sách là:",max_number)
-bai53()
+        max_number = L[0] # cho giá trị đầu là lớn nhất
+        for num in L:     # lặp để so sánh
+            if num > max_number:
+                max_number=num
+        print("Giá trị lớn nhất trong danh sách là:",max_number)
+# bai53()
 
 # Bài 54:Nhập vào một list số nguyên L, nhập vào 2 số nguyên dương a và b (a < b < len(L))
 # Tìm và in ra số nhỏ nhất trong list từ vị trí a đến vị trí b
-# def bai54():
+def bai54():
+    L = [int(x) for x in input("Nhập danh sách (cách nhau dấu phẩy): ").split(",")]
+    if not L: print("Danh sách rỗng")
+    else:
+        a = int(input("Nhập a:"))
+        b = int(input("Nhập b > a:"))
+        if a >=b and a < 0 and b >= len(L): print("Không hợp lệ")
+        else:
+            min_number = L[a]
+            for i in range(a, b + 1):
+                if L[i]<min_number:
+                    min_number=L[i]
+            print("Số nhỏ nhất trong danh sách từ vị trí {} đến vị trí {} là {}".format(a,b,min_number))
 # bai54()
 
 # Bài 55:Nhập vào một list số nguyên L, hãy kiểm tra xem tất cả các phần tử trong mảng có bằng nhau hay không, nếu có thì in True, không có thì in False
-# def bai55():
+def bai55():
+    L = [int(x) for x in input("Nhập danh sách (cách nhau dấu phẩy): ").split(",")]
+    if not L: print("Danh sách rỗng")
+    else:
+        first_number=L[0]
+        for num in L:
+            if num != first_number:print(False)
+            return
+        print(False)
 # bai55()
 
 # Bài 56:Nhập vào một list số nguyên L, tìm và in ra giá trị dương đầu tiên của list, nếu không có giá trị dương, ta in ra -1
-# def bai56():
+def bai56():
+    L = [int(x) for x in input("Nhập danh sách (cách nhau dấu phẩy): ").split(",")]
+    if not L: print("Danh sách rỗng")
+    else:
+        found = False  # Sử dụng biến found để theo dõi xem có giá trị dương nào không
+
+        for num in L:
+            if num > 0:
+                print(num)
+                found = True
+                break  # Khi tìm thấy giá trị dương, thoát khỏi vòng lặp
+
+        if not found:
+            print(-1)  # Nếu không tìm thấy giá trị dương, in ra -1
 # bai56()
 
 # Bài 57: Nhập vào một list L, hãy tìm và in ra giá trị âm lớn nhất trong L, nếu L không có giá trị âm thì ta in 0
-# def bai57():
+def bai57():
+    L = [int(x) for x in input("Nhập danh sách (cách nhau dấu phẩy): ").split(",")]
+    if not L: print("Danh sách rỗng")
+    else:
+        max_num = L[0]  # Sử dụng biến found để theo dõi xem có giá trị dương nào không
+        for num in L:
+            if num < max_num:
+                max_num = num
+        print("âm lớn nhất là =",max_num)
+
+        if not max_num:
+            print(0)  # Nếu không tìm thấy giá trị dương, in ra -1
 # bai57()
 
 # Bài 58: Nhập vào một list số nguyên L, nhập vào số nguyên x, tìm giá trị trong list xa x nhất
-# def bai58():
-# bai58()
+def bai58():
+bai58()
 
 # Bài 59: Nhập vào một list số nguyên L, tính giá trị trung bình của list L
 # def bai59():
